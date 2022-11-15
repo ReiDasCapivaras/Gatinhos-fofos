@@ -4,7 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>História</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">		
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<style>
+		.myCard{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+
 </head>
 <body>
 
@@ -20,11 +29,11 @@
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		          <a class="nav-link active" aria-current="page" href="#"></a>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">Memes</a>
+		          <a class="nav-link" href="memes.html">Memes</a>
 		        </li>
 
 				<li class="nav-item">
-		          <a class="nav-link" href="#">Galeria</a>
+		          <a class="nav-link" href="galeria.html">Galeria</a>
 		        </li>
 
 		        <li class="nav-item">
@@ -39,63 +48,103 @@
   		</div>	
 	</nav>
 
-	
+<div>
 	<div class="container-fluid container mb-4 mt-3">
 		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-	  		<div class="carousel-indicators">
-		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-	    <div class="carousel-inner">
-		 	<div class="carousel-item active">
-		      <a href="#historia"><img src="recursos_historia/bigfloppa.jpg" class="d-block w-100 img-fluid rounded" alt="..."></a>
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Sobre:</h5>
-		        <p>Diversas informações sobre os gatos</p>
-		      </div>
-		    </div>
-		    <div class="carousel-item">
-			      <img src="recursos_historia/bigfloppa.jpg" class="d-block w-100 rounded" alt="...">
-			      <div class="carousel-caption d-none d-md-block">
-			        <h5>Localidades</h5>
-			        <p>Informações sobre as localidades em que se originaram os gatos</p>
-			      </div>
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-		    <div class="carousel-item">
-		      <img src="recursos_historia/bigfloppa.jpg" class="d-block w-100 img-fluid rounded" alt="...">
-		      <div class="carousel-caption d-none d-md-block">
-		        <h5>Raças</h5>
-		        <p>Descubra as raças de gato existentes</p>
-		      </div>
-		    </div>
-			
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="#historia"><img src="recursos_historia/carrousel1.jpg" class="d-block w-100 img-fluid rounded" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Sobre:</h5>
+						<p>Diversas informações sobre os gatos</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<a data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href="#catcoffees">
+						<img src="recursos_historia/carrousel2.jpg" class="d-block w-100 rounded" alt="...">
+					</a>
+
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Cat Coffees</h5>
+						<p>O que são e onde se encontram os melhores Cat Coffees</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<a href="#racas" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+						<img src="recursos_historia/carrousel3.jpg" class="d-block w-100 img-fluid rounded" alt="...">
+					</a>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Raças</h5>
+						<p>Descubra as raças de gato existentes</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="visually-hidden">Previous</span>
-		  </button>
-		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="visually-hidden">Next</span>
-		  </button>
+	</div>
+</div>
+
+	<hr class="border border-info border-2 opacity-75">
+
+	<div class="container-md">
+		<div class="row justify-content-center">
+			<div class="col col-md-3 col-sm-12">
+				<div class="card myCard mt-2 mb-2" style="width: 18rem;">
+					<img src="recursos_historia/gatopersa.jpg" width="300px" height="180px" class="card-img-top" alt="...">
+					<div class="card-body text-center">
+						<h5 class="card-title">Raças: Persa</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col col-md-3 col-sm-12">
+				<div class="card myCard mt-2 mb-2" style="width: 18rem;">
+					<img src="recursos_historia/gatosiames.jpg" width="300px" height="180px" class="card-img-top" alt="...">
+					<div class="card-body text-center">
+						<h5 class="card-title">Raças: Siamês</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col col-md-3 col-sm-12">
+				<div class="card myCard mt-2 mb-2" style="width: 18rem;">
+					<img src="recursos_historia/mainecoon.jpg" width="300px" height="180px" class="card-img-top" alt="...">
+					<div class="card-body text-center">
+						<h5 class="card-title">Raças: Maine Coon</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col col-md-3 col-sm-12">
+				<div class="card myCard mt-2" style="width: 18rem;">
+					<img src="recursos_historia/sphynx.jpg" width="300px" height="180px" class="card-img-top" alt="...">
+					<div class="card-body text-center">
+						<h5 class="card-title">Raças: Sphynx</h5>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<hr>
+	<hr class="border border-info border-2 opacity-75">
 
-
-
-
-
-	<div class="accordion mt-3" id="accordionExample">
+	<div class="accordion mt-3" id="accordionPanelsStayOpenExample">
   		<div class="accordion-item">
-    		<h2 class="accordion-header" id="headingOne">
+    		<h2 class="accordion-header" id="panelsStayOpen-headingOne">
 		      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="historia">
-		        Sobre:
+				  <i class="bi bi-info-circle mr-5"></i>. Sobre:
 		      </button>
     		</h2>
-		    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+		    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 		      <div class="accordion-body">
 		        
 		        <div class="row">
@@ -112,76 +161,296 @@
 		      			<p>
 		      				Existem cerca de 250 raças de gato doméstico, cujo peso variável entre 2,5 a 12 kg coloca a espécie na categoria de animal doméstico de pequeno a médio porte. Assim como ocorre com algumas raças de cães que apresentam esta mesma faixa de peso, o gato doméstico pode viver entre quinze e vinte anos. Dados censitários apontam que nos Estados Unidos existem mais gatos domésticos do que cachorros.Estimativas recentes indicam que, em breve, o Brasil irá mostrar essa mesma característica, passando a deter maior população felina do que canina em suas residências.
 		      			</p>
+						<p>
+							Fonte: (<a href="https://pt.wikipedia.org/wiki/Gato" target="_blank">Wikipedia</a>).
+						</p>
 		        	</div>
 		        </div>
-
-		        <div class="row">
-		        	<hr>
-		        	<div class="col">
-
-
-		        			
-		        	</div>
-		        </div>
-
 		      </div>
 		    </div>
   		</div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Cat Coffee
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="catcoffees">
+		  <i class="bi bi-cup-hot"></i>.
+		  Cat Coffee:
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
 
-      	<div class="row">
-	      		<div class="col-md-4 col-sm-12 mb-2">
+		  <hr class="border border-info border-2 opacity-75">
+		  <div>
+			  <h4 class="display-6">O que é um cat coffee?</h4>
+			  <p>Apesar de estar crescendo em popularidade, muita gente ainda não sabe o que é um cat café. Trata-se de
+				  um estabelecimento com um conceito simples e fascinante: um restaurante que além de servir café e
+				  outras refeições, permite que os clientes se encantem com fofos bichanos.
+			  </p>
+			  <p>
+				  Ou seja, enquanto você se delicia com seu aperitivo favorito, graciosos felinos desfilam pelo espaço.
+				  Além de pets, a decoração, os enfeites e até mesmo o menu são baseados nos bigodudos.
+				  Em outras palavras, cat café é imperdível para os gateiros de plantão!
+			  </p>
+
+			  <h4 class="display-6">Como surgiu?</h4>
+			  <p>
+				  Para compreender o conceito de cat café, é interessante conhecer sua história. Isso
+				  porque apesar de ser relativamente novo no Brasil, esses espaços surgiram há mais de 20 anos!
+				  O primeiro cat café foi na cidade de Taipei, em Taiwan, em 1998. O conceito fez sucesso e, logo,
+				  começou a se espalhar por toda a Ásia
+			  </p>
+			  <p>
+				  Foi no Japão que eles ganharam mais popularidade, com o nome de Neko Cafe. O êxito na
+				  “terra do Sol nascente” foi tanto que ainda hoje muitas pessoas usam o nome japonês para
+				  se referir aos cat cafés. Alguns anos depois, tivemos no Brasil o primeiro estabelecimento desse tipo.
+			  </p>
+			  <h4 class="display-6">No Brasil</h4>
+			  <p>
+				  A moda da cafeteria de gatos demorou um pouco para chegar em terras tupiniquins. O primeiro estabel
+				  ecimento do tipo foi o Café com Gato, em Sorocaba, interior de São Paulo. O restaurante abriu em
+				  2014 e ainda hoje é um dos espaços favoritos dos amantes de gatos.
+			  </p>
+			  <p>
+				  Porém, por questões sanitárias, o cat café no Brasil deve funcionar de forma diferente. Nossas
+				  leis proíbem animais soltos em espaços que sirvam refeições. Por isso, os bichanos ficam separados
+				  em um cômodo especial, com tudo que eles precisam.
+			  </p>
+			  <p>
+				  As paredes de vidro permitem que pessoas que gostam de gatos admirem e interajam com os bigodudos.
+				  Hoje, outras regiões do país contam com cat cafés de sucesso, como os estados do Rio de Janeiro
+				  e Rio Grande so Sul. Se você é fã de bichanos, não deixe de conferir se há um cat café em sua cidade!
+			  </p>
+		  </div>
+
+		  <hr class="border border-info border-2 opacity-75">
+
+		  <div class="row">
+	      		<div class="col col-sm-12 mb-2 text-center">
 	      			<h2 class="display-5">Cat coffee em Londres</h2>
-	      			já pensou em um lugar em que você possa tomar um café, descansar e ainda acariciar gatinhos fofinhos, então conheça Java Whiskers Cat Café (perfeito para você programador). Visite o site clicando <a href="https://javawhiskers.co.uk/" target="_blank">aqui</a>.
+	      			já pensou em um lugar em que você possa tomar um café, descansar
+					e ainda acariciar gatinhos fofinhos, então conheça Java Whiskers
+					Cat Café (perfeito para você programador). Visite o site clicando
+					<a href="https://javawhiskers.co.uk/" target="_blank">aqui</a>.
       			</div>
-      			<div class="col-md-8 col-sm-12">
-      				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402.45003609773767!2d-0.1426691680080594!3d51.5196156246455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b6ee54e365d%3A0xe0e160abd5c1ea55!2sJava%20Whiskers%20Cat%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1668083784185!5m2!1spt-BR!2sbr" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      			</div>
-      	</div>
+		</div>
+		  <div class="container container-fluid d-flex justify-content-center mb-4 mt-3">
+			  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				  Mostrar no mapa
+			  </button>
+		  </div>
 
-      	<div class="row">
-      		<div class="col-md-4 col-sm-12">
-      				<h2 class="display-5">Cat coffe aqui no Brasil</h2>
-      				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      		</div>
+		  <div class="collapse" id="collapseExample">
+			  <div class="row">
+				  <div class="col col-sm-12 mt-2">
+					  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m
+							12!1m3!1d402.45003609773767!2d-0.1426691680080594!3d51.51961
+							56246455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487
+							61b6ee54e365d%3A0xe0e160abd5c1ea55!2sJava%20Whiskers%20Cat%20Caf%C3%A
+							9!5e0!3m2!1spt-BR!2sbr!4v1668083784185!5m2!1spt-BR!2sbr" class="ratio ratio-16x9 mb-5" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				  </div>
+				  <br>
+				  <hr class="border border-info border-2 opacity-75">
+			  </div>
+		  </div>
+		  <div class="row">
+			  <div class="col col-sm-12 text-center">
+				  <h2 class="display-5">Cat coffee aqui no Brasil</h2>
+				  Bom, se uma viagem para Londres para acariciar gatinhos parece-lhe uma ideia absurda, não se preocupe, pois existem Cat Coffees mais próximos
+				   como o Gateria Cat Cafe aqui em São Paulo
+			  </div>
+		  </div>
 
-      		<div class="col-md-8 col-sm-12">
-      			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d271.78510753632844!2d-46.63526606619134!3d-23.579576077253165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5980e922c853%3A0x7a4adee145b852c6!2sGateria%20Cat%20Cafe!5e0!3m2!1spt-BR!2sbr!4v1668084822710!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      		</div>
-      	</div>
-      	
-
-      	
-
+		  <div class="container container-fluid d-flex justify-content-center mb-4 mt-3">
+			  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+				  Mostrar no mapa
+			  </button>
+		  </div>
+		  <div class="collapse" id="collapseExample1">
+			  <div class="row">
+				  <div class="col col-sm-12 mt-2">
+					  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d271.78510753632844!2d-46.63526606619134!3d-23.57957
+					6077253165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5980e922c853%3A0x7a4adee145b852c6!2sGateria%20Cat%20
+					Cafe!5e0!3m2!1spt-BR!2sbr!4v1668084822710!5m2!1spt-BR!2sbr" class="ratio ratio-16x9" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				  </div>
+			  </div>
+		  </div>
       </div>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Raças
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="racas">
+		  <i class="bi bi-house-heart"></i>.
+		  Raças:
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+		  <h2 class="display-5 text-center">Veja agora algumas raças de gato</h2>
+
+		  <hr>
+
+		  <div class="row">
+
+			  <div class="col-md-8 col-sm-12 mt-2">
+				  <hr class="border border-info border-2 opacity-75">
+
+				  <h4 class="display-6 text-center" id="racapersa">
+					  Persa
+				  </h4>
+				  <p>
+					  O gato Persa é, para muitos, sinônimo de gato de luxo. Com seu porte
+					  tranquilo, pelagem longa e majestosa e focinho plano, o tornam “rei das exposições”.
+				  </p>
+				  <p>
+					  Possui temperamento tranquilo e é amável, ótimo para pessoas que possuem outros pets,
+					  crianças ou que são donos pela primeira vez de um felino.
+				  </p>
+				  <p>
+					  O Persa adora dormir no colo e receber carinho!
+				  </p>
+				  <p>
+					  Uma raça mais nova, a Himalaia, nasceu em 1950, quando cruzaram um gato Siamês com um Persa
+					  para criar um pet que tivesse corpo do Persa e a coloração do Siamês (olhos azuis e cores nas
+					  extremidades, denominado Persa Colorpoint).
+				  </p>
+			  </div>
+			  <div class="col-md-4 col-sm-12">
+				  <img class="img img-fluid mb-5" src="recursos_historia/gatopersa.jpg" alt="">
+			  </div>
+		  </div>
+
+		  <hr>
+
+		  <div class="row ">
+
+			  <div class="col-md-8 col-sm-12 mt-2">
+				  <hr class="border border-info border-2 opacity-75">
+
+				  <h4 class="display-6 text-center" id="racasiames">
+					  Siamês
+				  </h4>
+				  <p>
+					  A aparência de um gato Siamês é o que mais chama atenção: olhos bem azuis e pelos claros com
+					  extremidades mais escuras (rosto, orelhas, patas e rabo). Com postura elegante, esta raça era
+					  comum em companhias para reis na Tailândia.
+				  </p>
+				  <p>
+					  Já o temperamento do gato Siamês pode ser imprevisível. Na maioria das vezes, são tranquilos,
+					  amáveis e fiéis, mas algumas vezes, de repente, o comportamento muda, e eles podem ficar mais
+					  quietos e apáticos.São uma raça independente e que precisa de socialização logo cedo, para não
+					  terem ciúmes de seus donos e se darem bem com todas as pessoas próximas.
+				  </p>
+				  <p>
+					  Se você tem um gato Siamês, lembre-se de tratá-lo com a alimentação adequada e específica.
+				  </p>
+
+			  </div>
+			  <div class="col-md-4 col-sm-12">
+				  <img class="img img-fluid mb-5" src="recursos_historia/gatosiames.jpg" alt="">
+			  </div>
+		  </div>
+		  <hr>
+		  <div class="row ">
+			  <div class="col-md-8 col-sm-12 mt-2">
+				  <hr class="border border-info border-2 opacity-75">
+
+				  <h4 class="display-6 text-center" id="racamainecoon">
+					  Maine Coon
+				  </h4>
+				  <p>
+					  Também conhecido como o Gato Gigante, os gatos da raça Maine Coon são enormes,
+					  chegando a pesar até 13kg e a um porte semelhante ao de um poodle médio.
+				  </p>
+				  <p>
+					  A coloração da pelagem é bem variada, e os pelos são longos, principalmente na região do rabo.
+					  São brincalhões, ativos, companheiros e amigáveis. Por ser um gato bem diferente e único, esta
+					  raça necessita de cuidados e atenção especiais. Por isso existe a ração específica para Maine Coon.
+				  </p>
+				  <p>
+					  Se você tem um gato Siamês, lembre-se de tratá-lo com a alimentação adequada e específica.
+				  </p>
+
+			  </div>
+			  <div class="col-md-4 col-sm-12">
+				  <img class="img img-fluid mb-5" src="recursos_historia/mainecoon.jpg" alt="">
+			  </div>
+		  </div>
+
+		  <hr>
+		  <div class="row ">
+			  <div class="col-md-8 col-sm-12 mt-2">
+				  <hr class="border border-info border-2 opacity-75">
+				  <h4 class="display-6 text-center" id="racasphynx">
+					  Sphynx
+				  </h4>
+				  <p>
+					  Exótica e diferente, a raça Sphynx é a mais rara dos felinos. Também conhecido como Pelado
+					  Canadense, o gato desta raça possui o visual totalmente sem pelos!
+				  </p>
+				  <p>
+					  Os gatos Sphynx são extremamente dóceis e apegados aos donos, adoram carinho, companhia e
+					  brinquedos seja para se entreter sozinho ou de preferência com seu dono.
+				  </p>
+				  <p>
+					  Além da ausência de pelos, os grandes olhos e orelhas são características marcantes.
+					  Eles também não possuem bigodes, o que os tornam um pouco desajeitados.
+				  </p>
+				  <p>
+					  Curiosamente, o primeiro gatinho pelado que deu origem à raça, nasceu em uma ninhada no Canadá,
+					  em 1966, sendo o único sem pelos. Este gato deu crias, posteriormente, e mais gatos nasceram
+					  pelados, dando assim continuidade e criação à raça Sphynx.
+				  </p>
+			  </div>
+			  <div class="col-md-4 col-sm-12">
+				  <img class="img img-fluid mb-5" src="recursos_historia/sphynx.jpg" alt="">
+			  </div>
+		  </div>
+	  </div>
     </div>
   </div>
 </div>
 
+	<div class="container">
+		<div class="card text-center">
+			<div class="card-header">
+				Créditos
+			</div>
+
+			<div class="card-body">
+				<div class="bg-danger text-white">
+					<h1 class="display-1">
+						AVISO IMPORTANTE
+					</h1>
+					Os textos utilizados aqui neste site não foram feitos por mim, dado que o objetivo deste site é utilizar
+					dos recursos de HTML e CSS com artifício do Framework Bootstrap, portanto é importantíssimo esclarecer que
+					NENHUM texto aqui é de minha autoria <br>
+				</div>
+			</div>
+
+			<div class="card-body">
+				<h5 class="card-title">Fontes:</h5>
+				<button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+					Aqui
+				</button>
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Fontes de dados usadas para este site: </h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Framework utilizado para a página: <br> <a href="https://getbootstrap.com/">Bootstrap</a>.</li>
+							<li class="list-group-item">Para as informações sobre os gatos: <br> <a href="https://pt.wikipedia.org/wiki/Gato">Wikipedia</a>.</li>
+							<li class="list-group-item">Para as informações sobre os Cat Coffees: <br> <a href="https://www.petz.com.br/blog/curiosidades/cat-cafe/">Petz</a>.</li>
+							<li class="list-group-item">Para as informações sobre as raças: <br> <a href="https://inovaveterinaria.com.br/conheca-as-10-racas-de-gatos-mais-populares-no-brasil/">Inova veteriária</a>.</li>
+						</ul>
+						<div class="position-absolute bottom-0 start-0 mb-1" style="color: grey"> Pagina feita por: Heitor Gomes de Oliveira</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
