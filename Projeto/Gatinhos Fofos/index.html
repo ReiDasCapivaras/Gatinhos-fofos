@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="icon" href="recursos_index/Pawsphoria.ico" type="image/png">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 	<style type="text/css">
-		
+
 		.myContainer {
 			background-color: #D1345B;
-			border-radius: 5px;		
-			padding: 20px;			
+			border-radius: 5px;
+			padding: 20px;
 		}
 
 		.card img {
@@ -24,144 +25,158 @@
 			margin-bottom: 20px;
 		}
 
+
 	</style>
 
-	<title>Cotil-Unicamp</title>
+	<title>Gatinhos fotos</title>
 </head>
-<body>
+<body class="text-bg-dark">
 
-	<!-- início navbar -->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#"><img src="img/unicamp.gif" width="40px"></a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="historia.html">Gatos pela História</a>
-	        </li>
-	        <li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Mídia
-	          </a>
-	          <ul class="dropdown-menu">
-	          	<li><a class="dropdown-item" href="ds.html">Galeria de Fotos</a></li>
-	          	<li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="edif.html">Compilado de Memes</a></li>
-	            
-	          </ul>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="contato.html">Contato</a>
-	        </li>
-	      </ul>
-	      <form class="d-flex" role="search">
-	        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-	        <button class="btn btn-info" type="submit"><i class="bi bi-search"></i></button>
-	      </form>
-	    </div>
-	  </div>
-	</nav>	
-	<!-- fim navbar -->
+<!-- início navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-2 border-info">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="recursos_index/Pawsphoria.ico" width="40px"></a>
+		<a class="navbar-brand" href="index.html">Início</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="informacoes.html">Informações</a>
+				</li>
 
-    <!-- container inicial -->
-	<div class="container mt-3">
+				<li class="nav-item">
+					<a class="nav-link" href="contato.html">Contato</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="contato.html">Contato</a>
+				</li>
 
-		<div class="row">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Mídia
+					</a>
 
-			<div class="col-md-2 col-sm-12 pt-2">
-				<i class="bi bi-house-door-fill text-info"></i>
-		    </div>
 
-			<div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-telephone-fill text-info"></i> (16) 1803-3988</div>
+					<ul class="dropdown-menu text-bg-dark">
+						<li><a class="dropdown-item text-white" href="galeria.html">Galeria de Fotos</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item text-white" href="memes.html">Compilado de Memes</a></li>
 
-			<div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-envelope-fill text-info"></i> contato@gatinhosfofos.com</div>
+					</ul>
+				</li>
 
-			<div class="col-md-4 col-sm-12">
-				<button class="btn btn-light border-dark"><i class="bi bi-facebook text-info"></i></button>
-				<button class="btn btn-light border-dark"><i class="bi bi-youtube text-info"></i></button>
-				<button class="btn btn-light border-dark"><i class="bi bi-instagram text-info"></i></button>
-			</div>			
+			</ul>
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+				<button class="btn btn-info" type="submit"><i class="bi bi-search"></i></button>
+			</form>
+		</div>
+	</div>
+</nav>
+<!-- fim navbar -->
+
+<!-- container inicial -->
+<div class="container mt-3">
+
+	<div class="row">
+
+		<div class="col-md-2 col-sm-12 pt-2">
+			<i class="bi bi-house-door-fill text-info"></i>
+		</div>
+
+		<div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-telephone-fill text-info"></i> (16) 1803-3988</div>
+
+		<div class="col-md-3 col-sm-12 pt-2"><i class="bi bi-envelope-fill text-info"></i> contato@gatinhosfofos.com</div>
+
+		<div class="col-md-4 col-sm-12">
+			<button class="btn btn-light border-dark"><i class="bi bi-facebook text-info"></i></button>
+			<button class="btn btn-light border-dark"><i class="bi bi-youtube text-info"></i></button>
+			<button class="btn btn-light border-dark"><i class="bi bi-instagram text-info"></i></button>
+		</div>
+
+	</div>
+
+	<hr class="border-info">
+
+	<h1 class="display-3">Gatinhos Fofos</h1>
+
+	<div class="myContainer">
+		<p class="lead text-white">Você gosta de gatos?</p>
+
+		<p>
+			Os gatos são os animais de estimação mais populares de todo o mundo. Apesar de domesticados, os gatos partilham todas as características dos felinos selvagens dos quais são parentes: são fortes, ágeis, dotados de grandes reflexos, sentidos apurados e instinto de caça, além de possuírem a personalidade vincada e individualista que lhes é característica.
+			São brincalhões, muito independentes, curiosos e conseguem ser teimosos, mas são também extremamente amigáveis e afetivos: um dos gestos mais carinhosos dos gatos é a famosa turrinha, que dão entre si e aos seus donos. Outro sinal de afeição é o não menos famoso ronronar.
+		</p>
+	</div>
+</div>
+<!-- fim container inicial -->
+
+<!-- container cursos -->
+<br>
+<br>
+<br>
+<div class="container myContainer">
+
+	<h4 class="display-5"><i class="bi bi-book"></i> Explore o mundo dos gatinhos!</h4>
+
+	<!-- 1a linha do grid system -->
+	<div class="row">
+
+		<!-- 1a div da 1a row -->
+		<div class="col-md-4 col-sm-12">
+
+			<div class="card text-bg-dark">
+				<img src="recursos_galeria/12.jpg" class="card-img-top" alt="Galeria de Fotos">
+				<div class="card-body">
+					<h5 class="card-title">Galeria de Fotos</h5>
+					<p class="card-text">
+						veja algumas de nossas fotos mais fofas de gatinhos.
+					</p>
+					<a href="galeria.html" class="btn btn-info">Conheça</a>
+				</div>
+			</div>
 
 		</div>
 
-		<hr class="border-info">
-
-		<h1 class="display-3">Gatinhos Fofos</h1>
-
-		<div class="myContainer">
-			<p class="lead text-info">Você gosta de gatos?</p>
-
-			<p>
-				Os gatos são os animais de estimação mais populares de todo o mundo. Apesar de domesticados, os gatos partilham todas as características dos felinos selvagens dos quais são parentes: são fortes, ágeis, dotados de grandes reflexos, sentidos apurados e instinto de caça, além de possuírem a personalidade vincada e individualista que lhes é característica.
-				São brincalhões, muito independentes, curiosos e conseguem ser teimosos, mas são também extremamente amigáveis e afetivos: um dos gestos mais carinhosos dos gatos é a famosa turrinha, que dão entre si e aos seus donos. Outro sinal de afeição é o não menos famoso ronronar.
-			</p>
+		<!-- 2a div da 1a row -->
+		<div class="col-md-4 col-sm-12">
+			<div class="card text-bg-dark">
+				<img src="recursos_historia/mainecoon.jpg" class="card-img-top" alt="Compilado de Memes">
+				<div class="card-body">
+					<h5 class="card-title">Compilado de Memes</h5>
+					<p class="card-text">
+						Aqui estão alguns memes engraçados para lhe divertir.
+					</p>
+					<a href="memes.html" class="btn btn-info">Conheça</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<!-- fim container inicial -->
 
-    <!-- container cursos -->
-    <br>
-    <br>
-    <br>
-	<div class="container myContainer">
-
-	  <h4 class="display-5"><i class="bi bi-book"></i> Explore o mundo dos gatinhos!</h4>	
-
-      <!-- 1a linha do grid system -->
-	  <div class="row">
-
-	  	<!-- 1a div da 1a row -->
-	  	<div class="col-md-4 col-sm-12">
-			
-			<div class="card">
-			  <img src="img/edificacoes.jpg" class="card-img-top" alt="Galeria de Fotos">
-			  <div class="card-body">
-			    <h5 class="card-title">Galeria de Fotos</h5>
-			    <p class="card-text"></p>
-			    <a href="edificacoes.html" class="btn btn-info">Conheça</a>
-			  </div>
-			</div>	 
-
-	  	</div>
-
-	  	<!-- 2a div da 1a row -->
-	  	<div class="col-md-4 col-sm-12">
-			<div class="card">
-			  <img src="recusos_index/card_memes.png" class="card-img-top" alt="Compilado de Memes">
-			  <div class="card-body">
-			    <h5 class="card-title">Compilado de Memes</h5>
-			    <p class="card-text"></p>
-			    <a href="enfermagem.html" class="btn btn-info">Conheça</a>
-			  </div>
-			</div>	 	  		
-	  	</div>
-
-	  	<!-- 3a div da 1a row -->
-	  	<div class="col-md-4 col-sm-12">
-			<div class="card">
-			  <img src="img/geodesia.jpg" class="card-img-top" alt="Gatos pela História">
-			  <div class="card-body">
-			    <h5 class="card-title">Gatos pela História</h5>
-			    <p class="card-text"></p>
-			    <a href="geodesia.html" class="btn btn-info">Conheça</a>
-			  </div>
-			</div>		  		
-	  	</div>
-
-	  </div>
-	  <!-- fim 1a linha do grid system -->
-
+		<!-- 3a div da 1a row -->
+		<div class="col-md-4 col-sm-12">
+			<div class="card text-bg-dark">
+				<img src="recursos_historia/bigfloppa.jpg" class="card-img-top" alt="Gatos pela História">
+				<div class="card-body">
+					<h5 class="card-title">Informações</h5>
+					<p class="card-text">
+						Veja algumas informações adicionais sobre os gatos
+					</p>
+					<a href="informacoes.html" class="btn btn-info">Conheça</a>
+				</div>
+			</div>
+		</div>
 
 	</div>
-	<!-- fim container cursos -->
-	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<!-- fim 1a linha do grid system -->
+
+
+</div>
+<!-- fim container cursos -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>

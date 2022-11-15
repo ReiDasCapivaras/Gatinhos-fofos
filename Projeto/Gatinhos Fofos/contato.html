@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style type="text/css">
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .myContainer {
+            background-color: #D1345B;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .card img {
+            height: 195px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #D1345B;
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        #nbichinho {
+            visibility: hidden;
+        }
+    </style>
+
+    <script>
+
+        function onsel() {
+            var x = document.getElementById('bichinho').value;
+            if (document.getElementById('bichinho').value != 'S')
+                document.getElementById("nbichinho").style.visibility = "hidden";
+            else
+                document.getElementById("nbichinho").style.visibility = "visible";
+
+        }
+    </script>
+
+    <title>Cotil-Unicamp</title>
+</head>
+
+<body class="text-bg-dark">
+
+<!-- início navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="recursos_index/Pawsphoria.ico" width="40px"></a>
+        <a class="navbar-brand" href="index.html">Início</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="informacoes.html">Informações</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mídia
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="galeria.html">Galeria de Fotos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="memes.html">Compilado de Memes</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-info" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- fim navbar -->
+
+<!-- container fotos -->
+<div class="container myContainer">
+
+    <h4 class="display-4"><i class="bi bi-envelope-plus"></i> Entre em contato!</h4>
+
+    <p class="lead">Entre em contato conosco para saber mais de nosso projeto. <span
+            class="badge bg-info">New</span></p>
+
+    <form class="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-md-5 col-sm-12  mt-3">
+                <label for="nome" class="form-label"><i class="bi bi-file-person"></i> Nome Completo:</label>
+                <input type="text" name="nome" class="form-control" placeholder="Ex: José Alberto" required>
+                <div class="invalid-feedback">
+                    Preencha seu nome.
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12  mt-3">
+                <label for="email" class="form-label"><i class="bi bi-envelope-paper"></i> E-mail:</label>
+                <input type="text" name="email" class="form-control" placeholder="Ex: josem@email.com" required>
+                <div class="invalid-feedback">
+                    Campo obrigatório!
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-12  mt-3">
+                <label for="telefone" class="form-label"><i class="bi bi-phone"></i> Telefone:</label>
+                <input type="text" name="telefone" class="form-control" required>
+                <div class="invalid-feedback">
+                    Campo obrigatório!
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12  mt-3">
+                <label for="estado" class="form-label"><i class="bi bi-building"></i> De que estado você está
+                    falando?</label>
+                <select id="estado" name="estado" class="form-select" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+                <div class="invalid-feedback">
+                    Campo obrigatório!
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12  mt-3">
+                <label for="bichinho" class="form-label"><i class="bi bi-patch-question"></i> Tem um
+                    bichinho?</label>
+                <select class="form-select" id="bichinho" onchange="onsel()">
+                    <option value="S">Sim</option>
+                    <option value="N" selected>Não</option>
+                </select>
+            </div>
+
+            <div class="col-md-5 col-sm-12  mt-3" id="nbichinho">
+                <label for="telefone" class="form-label"><i class="bi bi-sort-alpha-down"></i> Nome do
+                    bichinho:</label>
+                <input type="text" name="telefone" class="form-control" required>
+                <div class="invalid-feedback">
+                    Campo obrigatório!
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12  mt-3">
+                <label for="formFile" class="form-label"><i class="bi bi-file-earmark"></i> Anexos
+                    (opcional):</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 mt-3">
+                <label for="msg" class="form-label"> <i class="bi bi-chat-left-dots"></i> Mensagem:</label>
+                <textarea rows="5" name="msg" class="form-control" required></textarea>
+                <div class="invalid-feedback">
+                    Campo obrigatório!
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-dark"><i class="bi bi-send"> Enviar</i></button>
+            <button type="reset" class="btn btn-dark position-relative"><i class="bi bi-x-circle"> Limpar</i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+                        Cuidado!
+                    </span>
+            </button>
+        </div>
+
+
+
+
+</div>
+<!-- fim container fotos -->
+
+<script type="text/javascript">
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+<footer class="container-fluid text-info text-white">
+    Gatinhos Fofos<br><br>
+
+    <hr>
+
+    Natália Carvalho e Heitor Gomes de Oliveira<br>
+    COTIL - UNICAMP
+</footer>
+
+</body>
+
+</html>
